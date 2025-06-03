@@ -922,7 +922,7 @@ int     tZeroCrossingInfo_period(tZeroCrossingInfo* const z, tZeroCrossingInfo* 
 
 Lfloat   tZeroCrossingInfo_fractionalPeriod(tZeroCrossingInfo* const z, tZeroCrossingInfo* const next)
 {
-    tZeroCrossingInfo* n = &*next;
+    tZeroCrossingInfo* n = next;
     
     // Get the start edge
     Lfloat prev1 = z->_before_crossing;

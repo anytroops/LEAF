@@ -3821,7 +3821,7 @@ void    tTriLFO_initToPool   (tTriLFO** const cy, tMempool** const mp)
 
 void    tTriLFO_free(tTriLFO** const cy)
 {
-    tTriLFO* c = &*cy;
+    tTriLFO* c = *cy;
     
     mpool_free((char*)c, c->mempool);
 }

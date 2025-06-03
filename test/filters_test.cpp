@@ -50,7 +50,8 @@ TEST_CASE("Tests for `tOnePole` filer", "[tOnePole]") {
     char leafMemory[65535];
     LEAF_init(&leaf, 44100.f, leafMemory, 65535, &myrand);
 
-tOnePole* filter;
+
+    tOnePole* filter;
     tOnePole_init(&filter, 22050, &leaf);
 
     REQUIRE(filter != nullptr);
